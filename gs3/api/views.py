@@ -9,6 +9,7 @@ from django.http import HttpResponse
 from django.views.decorators.csrf import csrf_exempt
 
 # Create your views here.
+# creating class based views
 @csrf_exempt
 def Student_api(request):
     if request.method == 'GET':

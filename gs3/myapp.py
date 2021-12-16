@@ -1,6 +1,9 @@
+# This is a a python program which uses django rest framework API for CRUD operations 
 import requests, json
 
 URL = "http://127.0.0.1:8000/studentapi/"
+
+# the data is hardcoded for now
 
 def get_data(id = None):
     # retreive data acording to id
@@ -12,7 +15,7 @@ def get_data(id = None):
     data = r.json()
     print(data)
 
-# get_data()
+get_data()
 
 def post_data():
     data = {
@@ -45,4 +48,5 @@ def delete_data():
     data = r.json()
     print(data)
 
-delete_data()
+# delete_data()
+
